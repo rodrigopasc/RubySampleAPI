@@ -9,22 +9,35 @@ Boilerplate for a Ruby API.
 
 [![CircleCI](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master.svg?style=svg&circle-token=ceaf2302411f540f3f6a9a48cf422c41c1fd7b46)](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master)
 
+## Summary
+
+- [Briefing](#briefing)
+- [Architecture](#architecture)
+  - [Main API](#main-api)
+  - [GitHub](#github)
+  - [CI](#ci)
+  - [Logger Microservice](#logger-microservice)
+- [Requirements](#requirements)
+- [Setup](#setup)
+- [Available Routes](#available-routes)
+- [Gems](#Gems)
+
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
 The project was made with MySQL for the database, Sidekiq with Redis for running processes in the background and Rspec for running tests.
 
 ## Architecture
-* **Main API**
+* #### Main API
   * You can create, read, find, update and delete products.
-* **GitHub**
+* #### GitHub
   - [auto-add-label](https://github.com/marketplace/auto-add-label)
   - [Code Dog Auto Merge](https://github.com/marketplace/auto-merge)
   - [Depfu](https://github.com/marketplace/depfu)
   - [Task List Completed](https://github.com/marketplace/task-list-completed)
-* **CI**
+* #### CI
   - [CircleCI](http://circleci.com)
-* [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
+* #### [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
   * Suggestion: Implement a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
 
 ## Requirements
@@ -40,6 +53,18 @@ The project was made with MySQL for the database, Sidekiq with Redis for running
 * Seed the development database. Run: `$ rails db:seed`
 * Run _rspec_ tests: `$ rails rspec`
 * Start the server with `$ rails s` and make sure _Redis_ is running.
+
+## Available Routes
+
+| HTTP Method | Path | Params | HTTP Responses |
+| --- | --- | --- | --- |
+| POST | `/auth` | **username**:string *required*, **password**:string *required* | 200, 400, 401 |
+| GET | `/api/products` |  | 200, 401 |
+| POST | `/api/products` | **name**:string *required*, **description**:string | 201, 400, 401 |
+| GET | `/api/products/:id` | | 200, 404 |
+| PATCH/PUT | `/api/products/:id` | **name**:string *required*, **description**:string | 200, 404, 422 |
+| DELETE | `/api/products/:id` | | 204, 404 |
+
 
 ## Gems
 * [attr_extras](https://rubygems.org/gems/attr_extras)
