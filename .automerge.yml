@@ -1,6 +1,4 @@
 merge:
-  whitelist:
-    labels: ["merged"]
   blacklist:
     labels: ["wip"]
   method: squash
