@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Credential.create({ username: 'developer', password: 'qwerty', password_confirmation: 'qwerty' })
+
+puts 'API credential for developer successfully created.'

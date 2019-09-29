@@ -1,5 +1,6 @@
 class AuthController < ActionController::API
   include HandableErrorsConcern
+  include AuthHelper
 
   def create
     if auth_params
@@ -20,10 +21,6 @@ class AuthController < ActionController::API
 
   def authenticate_api_user
     render json: { token: AuthJwtService.new(@api_user).generate_token, expire_at: date_to_expire }, status: :ok
-  end
-
-  def deny_api_user
-    render json: { error: 'User not found or not allowed.' }, status: :unauthorized
   end
 
   def date_to_expire
