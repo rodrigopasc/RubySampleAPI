@@ -23,16 +23,24 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors', '~> 1.0.3'
 # Autoload dotenv in Rails.
 gem 'dotenv-rails', '~> 2.7.5'
+# The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.
+gem 'bcrypt', '~> 3.1.13'
+# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard.
+gem 'jwt', '~> 2.2.1'
+# Takes some boilerplate out of Ruby with methods like attr_initialize.
+gem 'attr_extras', '~> 6.2.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # rspec-rails is a testing framework for Rails 3+.
   gem 'rspec-rails', '~> 3.8.2'
-  # factory_bot_rails provides integration between factory_bot and rails 4.2 or newer
-  gem 'factory_bot_rails', '~> 5.1.0'
+  # Shoulda Matchers provides RSpec- and Minitest-compatible one-liners to test common Rails functionality that, if written by hand, would be much longer, more complex, and error-prone.
+  gem 'shoulda-matchers', '~> 4.1.2'
   # Ffaker generates dummy data.
   gem 'ffaker', '~> 2.12.0'
+  # factory_bot_rails provides integration between factory_bot and rails 4.2 or newer
+  gem 'factory_bot_rails', '~> 5.1.0'
 end
 
 group :development do
