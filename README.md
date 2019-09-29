@@ -13,6 +13,10 @@ Boilerplate for a Ruby API.
 
 - [Briefing](#briefing)
 - [Architecture](#architecture)
+  - [Main API](#main-api)
+  - [GitHub](#github)
+  - [CI](#ci)
+  - [Logger Microservice](#logger-microservice)
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Available Routes](#available-routes)
@@ -24,16 +28,16 @@ Assuming the goal is to build a robust and reliable API that meets the standards
 The project was made with MySQL for the database, Sidekiq with Redis for running processes in the background and Rspec for running tests.
 
 ## Architecture
-* **Main API**
+* #### Main API
   * You can create, read, find, update and delete products.
-* **GitHub**
+* #### GitHub
   - [auto-add-label](https://github.com/marketplace/auto-add-label)
   - [Code Dog Auto Merge](https://github.com/marketplace/auto-merge)
   - [Depfu](https://github.com/marketplace/depfu)
   - [Task List Completed](https://github.com/marketplace/task-list-completed)
-* **CI**
+* #### CI
   - [CircleCI](http://circleci.com)
-* [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
+* #### [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
   * Suggestion: Implement a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
 
 ## Requirements
