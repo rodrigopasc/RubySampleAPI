@@ -61,9 +61,9 @@ The project was made with MySQL for the database, Sidekiq with Redis for running
 | POST | `/auth` | Authentication sign in. | **username**:string *required*, **password**:string *required* | 200, 400, 401 |
 | GET | `/api/products` | Returns all products. |  | 200, 401 |
 | POST | `/api/products` | Creates a new product. | **name**:string *required*, **description**:string | 201, 400, 401 |
-| GET | `/api/products/:id` | Returns a specific product. | | 200, 404 |
-| PATCH/PUT | `/api/products/:id` | Updates a specific product. | **name**:string *required*, **description**:string | 200, 404, 422 |
-| DELETE | `/api/products/:id` | Deletes a specific product. | | 204, 404 |
+| GET | `/api/products/:id` | Returns a specific product. | | 200, 401, 404 |
+| PATCH/PUT | `/api/products/:id` | Updates a specific product. | **name**:string *required*, **description**:string | 200, 401, 404, 422 |
+| DELETE | `/api/products/:id` | Destroys a specific product. | | 204, 401, 404 |
 
 
 ## Gems
