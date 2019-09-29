@@ -19,7 +19,7 @@ class AuthController < ActionController::API
   end
 
   def authenticate_api_user
-    render json: { jwt: AuthJwtService.new(@api_user).generate_token, expire_at: date_to_expire }, status: :ok
+    render json: { token: AuthJwtService.new(@api_user).generate_token, expire_at: date_to_expire }, status: :ok
   end
 
   def deny_api_user
