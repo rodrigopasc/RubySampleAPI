@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.0'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.2'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.1.3'
 # Simple, efficient background processing for Ruby.
