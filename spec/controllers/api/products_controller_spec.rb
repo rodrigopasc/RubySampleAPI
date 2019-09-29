@@ -4,6 +4,10 @@ RSpec.describe Api::ProductsController, type: :controller do
   let!(:credential_test) { FactoryBot.create :credential }
   let!(:product_test) { FactoryBot.create :product }
 
+  before do
+    allow_any_instance_of(ApplicationController).to receive(:authenticate) { true }
+  end
+
   describe 'Index' do
     it 'Should return ok' do
       get :index
