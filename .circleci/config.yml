@@ -22,7 +22,10 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: bundle --jobs=4 --retry=3 --path vendor/bundle
+          command: |
+            sudo gem uninstall bundler
+            sudo gem install bundler
+            bundle --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
           paths:
