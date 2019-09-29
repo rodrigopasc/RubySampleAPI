@@ -1,0 +1,4 @@
+check_products_job:
+  cron: "* * * * *"
+  class: "CheckProductsJob"
+  queue: default
