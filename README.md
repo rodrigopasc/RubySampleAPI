@@ -1,13 +1,13 @@
 # Ruby Sample API
 
+[![CircleCI](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master.svg?style=svg&circle-token=ceaf2302411f540f3f6a9a48cf422c41c1fd7b46)](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master)
+
 Boilerplate for a Ruby API.
 > This is just a concept.
 
 <p align="center">
   <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1406392741200px-Ruby_logo.svg.png" width="15%" alt="Microservices" />
 </p>
-
-[![CircleCI](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master.svg?style=svg&circle-token=ceaf2302411f540f3f6a9a48cf422c41c1fd7b46)](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master)
 
 ## Summary
 
@@ -56,14 +56,14 @@ The project was made with MySQL for the database, Sidekiq with Redis for running
 
 ## Available Routes
 
-| HTTP Method | Path | Params | HTTP Responses |
-| --- | --- | --- | --- |
-| POST | `/auth` | **username**:string *required*, **password**:string *required* | 200, 400, 401 |
-| GET | `/api/products` |  | 200, 401 |
-| POST | `/api/products` | **name**:string *required*, **description**:string | 201, 400, 401 |
-| GET | `/api/products/:id` | | 200, 404 |
-| PATCH/PUT | `/api/products/:id` | **name**:string *required*, **description**:string | 200, 404, 422 |
-| DELETE | `/api/products/:id` | | 204, 404 |
+| HTTP Method | Path | Description | Params | HTTP Responses |
+| --- | --- | --- | --- | --- |
+| POST | `/auth` | Authentication sign in. | **username**:string *required*, **password**:string *required* | 200, 400, 401 |
+| GET | `/api/products` | Returns all products. |  | 200, 401 |
+| POST | `/api/products` | Creates a new product. | **name**:string *required*, **description**:string | 201, 400, 401 |
+| GET | `/api/products/:id` | Returns a specific product. | | 200, 404 |
+| PATCH/PUT | `/api/products/:id` | Updates a specific product. | **name**:string *required*, **description**:string | 200, 404, 422 |
+| DELETE | `/api/products/:id` | Deletes a specific product. | | 204, 404 |
 
 
 ## Gems
