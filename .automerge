@@ -1,0 +1,8 @@
+merge:
+  blacklist:
+    labels: ["wip"]
+  method: squash
+  required_statuses:
+    - "ci/circleci: build"
+    - "task-list-completed"
+  delete_after_merge: true
