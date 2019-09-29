@@ -7,16 +7,18 @@ Boilerplate for a Ruby API.
   <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1406392741200px-Ruby_logo.svg.png" width="15%" alt="Microservices" />
 </p>
 
+[![CircleCI](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master.svg?style=svg&circle-token=ceaf2302411f540f3f6a9a48cf422c41c1fd7b46)](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master)
+
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
-The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background and a [Error Logger Microservice] to store all the errors into an instance of _MongoDB_.
+The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background. All the tests were made with _Rspec_.
 
 ## Architecture
 * **Main API**
   * It all starts here where in this example you are able to create, read, find, update and delete products.
-* [Error Logger Microservice](https://github.com/rodrigopasc/LoggerMicroservice)
-  * Receive error log and then persists on [MongoDB](http://mongodb.com).
+* [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
+  * Suggestion: Add a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
 
 ## Requirements
 - Ruby >= 2.6.3
