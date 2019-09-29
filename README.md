@@ -12,11 +12,11 @@ Boilerplate for a Ruby API.
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
-The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background. All the tests were made with _Rspec_.
+The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background and _Rspec_ for running tests.
 
 ## Architecture
 * **Main API**
-  * It all starts here where in this example you are able to create, read, find, update and delete products.
+  * You are able to create, read, find, update and delete products.
 * **GitHub**
   - [auto-add-label](https://github.com/marketplace/auto-add-label)
   - [Code Dog Auto Merge](https://github.com/marketplace/auto-merge)
