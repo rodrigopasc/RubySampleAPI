@@ -1,0 +1,42 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.3
+      - image: circleci/mysql:latest
+      - image: elasticsearch:6.8.3
+      - image: redis:5.0.5
+
+    working_directory: ~/project
+
+    environment:
+      RAILS_ENV: test
+      
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            - v1-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: bundle --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - run: 
+          name: Setup database
+          command: |
+            cp config/database.yml.example config/database.yml &&
+            bundle exec rails db:create &&
+            bundle exec rails db:migrate &&
+            bundle exec rails data:migrate
+
+      - run:
+          name: Run tests
+          command: bundle exec rails spec
