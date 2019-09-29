@@ -17,8 +17,15 @@ The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for r
 ## Architecture
 * **Main API**
   * It all starts here where in this example you are able to create, read, find, update and delete products.
+* **GitHub**
+  - [auto-add-label](https://github.com/marketplace/auto-add-label)
+  - [Code Dog Auto Merge](https://github.com/marketplace/auto-merge)
+  - [Depfu](https://github.com/marketplace/depfu)
+  - [Task List Completed](https://github.com/marketplace/task-list-completed)
+* **CI**
+  - [CircleCI](http://circleci.com)
 * [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
-  * Suggestion: Add a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
+  * Suggestion: Setup a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
 
 ## Requirements
 - Ruby >= 2.6.3
