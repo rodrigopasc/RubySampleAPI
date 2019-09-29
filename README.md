@@ -9,6 +9,15 @@ Boilerplate for a Ruby API.
 
 [![CircleCI](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master.svg?style=svg&circle-token=ceaf2302411f540f3f6a9a48cf422c41c1fd7b46)](https://circleci.com/gh/rodrigopasc/RubySampleAPI/tree/master)
 
+## Summary
+
+- [Briefing](#briefing)
+- [Architecture](#architecture)
+- [Requirements](#requirements)
+- [Setup](#setup)
+- [Available Routes](#available-routes)
+- [Gems](#Gems)
+
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
@@ -40,6 +49,18 @@ The project was made with MySQL for the database, Sidekiq with Redis for running
 * Seed the development database. Run: `$ rails db:seed`
 * Run _rspec_ tests: `$ rails rspec`
 * Start the server with `$ rails s` and make sure _Redis_ is running.
+
+## Available Routes
+
+| HTTP Method | Path | Params | HTTP Responses |
+| --- | --- | --- | --- |
+| POST | `/auth` | **username**:string *required*, **password**:string *required* | 200, 400, 401 |
+| GET | `/api/products` |  | 200, 401 |
+| POST | `/api/products` | **name**:string *required*, **description**:string | 201, 400, 401 |
+| GET | `/api/products/:id` | | 200, 404 |
+| PATCH/PUT | `/api/products/:id` | **name**:string *required*, **description**:string | 200, 404, 422 |
+| DELETE | `/api/products/:id` | | 204, 404 |
+
 
 ## Gems
 * [attr_extras](https://rubygems.org/gems/attr_extras)
