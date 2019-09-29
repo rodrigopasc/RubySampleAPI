@@ -4,16 +4,18 @@ Boilerplate for a Ruby API.
 > This is just a concept.
 
 <p align="center">
-  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1406392741200px-Ruby_logo.svg.png" width="25%" alt="Microservices" />
+  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1406392741200px-Ruby_logo.svg.png" width="15%" alt="Microservices" />
 </p>
 
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
+The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background and a [Error Logger Microservice] to store all the errors into an instance of _MongoDB_.
+
 ## Architecture
 * **Main API**
   * It all starts here where in this example you are able to create, read, find, update and delete products.
-* [Error Logger Microservice](https://github.com/rodrigopasc/ErrorLoggerMicroservice)
+* [Error Logger Microservice](https://github.com/rodrigopasc/LoggerMicroservice)
   * Receive error log and then persists on [MongoDB](http://mongodb.com).
 
 ## Requirements
