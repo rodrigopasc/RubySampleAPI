@@ -11,12 +11,8 @@ gem 'mysql2', '>= 0.4.4'
 gem 'puma', '~> 3.11'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.1.3'
-# Intelligent search made easy with Rails and Elasticsearch
-gem 'searchkick', '~> 4.1.0'
 # Simple, efficient background processing for Ruby.
 gem 'sidekiq', '~> 6.0.0'
-# Run your data migration tasks in a db:migrate-like manner
-gem 'rails-data-migrations', '~> 1.2.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
