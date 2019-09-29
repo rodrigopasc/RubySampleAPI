@@ -38,6 +38,7 @@ The project was made with MySQL for the database, Sidekiq with Redis for running
 * Install the dependencies by running: `$ bundle`.
 * Setup the database by running: `$ rails db:create && rails db:migrate`
 * Seed the development database. Run: `$ rails db:seed`
+* Run _rspec_ tests: `$ rails rspec`
 * Start the server with `$ rails s` and make sure _Redis_ is running.
 
 ## Gems
