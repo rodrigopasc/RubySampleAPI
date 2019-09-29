@@ -12,11 +12,11 @@ Boilerplate for a Ruby API.
 ## Briefing
 Assuming the goal is to build a robust and reliable API that meets the standards of [REST](https://restfulapi.net), this project is a boilerplate for your project.
 
-The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for running processes on background and _Rspec_ for running tests.
+The project was made with MySQL for the database, Sidekiq with Redis for running processes in the background and Rspec for running tests.
 
 ## Architecture
 * **Main API**
-  * You are able to create, read, find, update and delete products.
+  * You can create, read, find, update and delete products.
 * **GitHub**
   - [auto-add-label](https://github.com/marketplace/auto-add-label)
   - [Code Dog Auto Merge](https://github.com/marketplace/auto-merge)
@@ -25,7 +25,7 @@ The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for r
 * **CI**
   - [CircleCI](http://circleci.com)
 * [Logger Microservice](https://github.com/rodrigopasc/zaptalkloggermicroservice)
-  * Suggestion: Setup a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
+  * Suggestion: Implement a serverless logger microservice to store everything on [MongoDB](http://mongodb.com) or [DynamoDB](https://aws.amazon.com/dynamodb/). Something like this [sample](https://github.com/rodrigopasc/zaptalkloggermicroservice).
 
 ## Requirements
 - Ruby >= 2.6.3
@@ -36,7 +36,7 @@ The project was made with _MySQL_ for the database, _Sidekiq_ with _Redis_ for r
 * Copy `.env.sample`, update with your information and rename it to `.env`.
 * Copy `config/database.yml.sample`, update with your information and rename it to `database.yml`.
 * Install the dependencies by running: `$ bundle`.
-* Setup the database by runnying: `$ rails db:create && rails db:migrate`
+* Setup the database by running: `$ rails db:create && rails db:migrate`
 * Seed the development database. Run: `$ rails db:seed`
 * Start the server with `$ rails s` and make sure _Redis_ is running.
 
