@@ -1,6 +1,6 @@
 merge:
   whitelist:
-    statuses: ["ci/circleci: build"]
+    labels: ["merged"]
   blacklist:
     labels: ["wip"]
   method: squash
