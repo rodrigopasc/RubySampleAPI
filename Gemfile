@@ -13,6 +13,8 @@ gem 'puma', '~> 3.11'
 gem 'redis', '~> 4.1.3'
 # Simple, efficient background processing for Ruby.
 gem 'sidekiq', '~> 6.0.0'
+# Enables to set jobs to be run in specified time (using CRON notation)
+gem 'sidekiq-cron', '~> 1.1.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
