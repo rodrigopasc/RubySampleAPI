@@ -32,7 +32,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # rspec-rails is a testing framework for Rails 3+.
-  gem 'rspec-rails', '~> 3.8.2'
+  gem 'rspec-rails', '~> 3.9.0'
   # Shoulda Matchers provides RSpec- and Minitest-compatible one-liners to test common Rails functionality that, if written by hand, would be much longer, more complex, and error-prone.
   gem 'shoulda-matchers', '~> 4.1.2'
   # Ffaker generates dummy data.
