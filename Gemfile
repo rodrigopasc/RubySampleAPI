@@ -18,7 +18,7 @@ gem 'sidekiq-cron', '~> 1.1.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors', '~> 1.0.3'
+gem 'rack-cors', '~> 1.1.0'
 # Autoload dotenv in Rails.
 gem 'dotenv-rails', '~> 2.7.5'
 # The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.
