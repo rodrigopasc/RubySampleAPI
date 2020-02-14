@@ -220,7 +220,7 @@ GEM
       simplecov (>= 0.17.0)
       tty-which (~> 0.4.0)
       virtus (~> 1.0)
-    sexp_processor (4.13.0)
+    sexp_processor (4.14.1)
     shoulda-matchers (4.2.0)
       activesupport (>= 4.2.0)
     sidekiq (6.0.4)
