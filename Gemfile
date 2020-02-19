@@ -49,7 +49,7 @@ group :development do
   #Makes spring watch files using the listen gem.
   gem 'spring-watcher-listen', '~> 2.0.0'
   # RubyCritic is a tool that wraps around various static analysis gems to provide a quality report of your Ruby code.
-  gem 'rubycritic', '~> 4.3.0'
+  gem 'rubycritic', '~> 4.4.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
