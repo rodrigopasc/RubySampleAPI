@@ -10,7 +10,7 @@ gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.2'
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.1.3'
+gem 'redis', '~> 4.2.5'
 # Simple, efficient background processing for Ruby.
 gem 'sidekiq', '~> 6.0.0'
 # Enables to set jobs to be run in specified time (using CRON notation)
