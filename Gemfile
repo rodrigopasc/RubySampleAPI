@@ -38,7 +38,7 @@ group :development, :test do
   # Ffaker generates dummy data.
   gem 'ffaker', '~> 2.13.0'
   # factory_bot_rails provides integration between factory_bot and rails 4.2 or newer
-  gem 'factory_bot_rails', '~> 5.1.0'
+  gem 'factory_bot_rails', '~> 6.1.0'
 end
 
 group :development do
