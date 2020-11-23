@@ -12,7 +12,7 @@ gem 'puma', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.2.5'
 # Simple, efficient background processing for Ruby.
-gem 'sidekiq', '~> 6.0.0'
+gem 'sidekiq', '~> 6.1.2'
 # Enables to set jobs to be run in specified time (using CRON notation)
 gem 'sidekiq-cron', '~> 1.2.0'
 # Reduces boot times through caching; required in config/boot.rb
