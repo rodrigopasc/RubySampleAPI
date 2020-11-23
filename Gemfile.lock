@@ -94,7 +94,7 @@ GEM
     factory_bot_rails (6.1.0)
       factory_bot (~> 6.1.0)
       railties (>= 5.0.0)
-    ffaker (2.13.0)
+    ffaker (2.17.0)
     ffi (1.12.2)
     flay (2.12.1)
       erubis (~> 2.7.0)
@@ -271,7 +271,7 @@ DEPENDENCIES
   byebug
   dotenv-rails (~> 2.7.5)
   factory_bot_rails (~> 6.1.0)
-  ffaker (~> 2.13.0)
+  ffaker (~> 2.17.0)
   jwt (~> 2.2.1)
   listen (>= 3.0.5, <= 3.2.1)
   mysql2 (>= 0.4.4)
