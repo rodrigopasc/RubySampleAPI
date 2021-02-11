@@ -43,7 +43,7 @@ end
 
 group :development do
   # The Listen gem listens to file modifications and notifies you about the changes. Works everywhere!
-  gem 'listen', '>= 3.0.5', '<= 3.3.1'
+  gem 'listen', '>= 3.0.5', '<= 3.4.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   #Makes spring watch files using the listen gem.
